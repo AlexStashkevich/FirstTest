@@ -3,11 +3,14 @@
 
     <!--spacer-->
     <dimen name="space_0">0dp</dimen>
+    <dimen name="space_1">1dp</dimen>
     <dimen name="space_4">4dp</dimen>
     <dimen name="space_8">8dp</dimen>
     <dimen name="space_16">16dp</dimen>
+    <dimen name="space_48">48dp</dimen>
     <dimen name="space_80">80dp</dimen>
     <dimen name="space_104">104dp</dimen>
+    <dimen name="space_176">176dp</dimen>
     <dimen name="space_240">240dp</dimen>
 
     <!--text size-->
