@@ -5,6 +5,8 @@
     <string name="bt_voice">🎙️</string>
     <string name="bt_search">🕵️‍</string>
     <string name="ti_hint">What are you interested in?</string>
+    <string name="let_me_think">Let me think…</string>
+    <string name="sorry">Sorry, I don\'t understand, can you rephrase?</string>
 
     <!--utils-->
     <string name="toast_text">Search text is: %1$s</string>
