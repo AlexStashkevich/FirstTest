@@ -10,3 +10,11 @@ fun AppCompatActivity.showToast(message: String) {
         Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
     }
 }
+
+fun AppCompatActivity.showToast() {
+    Toast.makeText(this, "Empty text", Toast.LENGTH_SHORT).show()
+}
+
+fun AppCompatActivity.showToast(resId: Int) {
+    Toast.makeText(this, resId, Toast.LENGTH_SHORT).show()
+}
