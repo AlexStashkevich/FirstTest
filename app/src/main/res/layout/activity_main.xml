@@ -86,41 +86,22 @@
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-    <androidx.core.widget.NestedScrollView
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rViewRequest"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/space_8"
-            android:layout_marginTop="@dimen/space_8"
-            android:layout_marginEnd="@dimen/space_8"
-            android:elevation="@dimen/space_4"
-            android:minHeight="@dimen/space_240"
-            app:cardBackgroundColor="@color/card_bg"
-            app:cardCornerRadius="@dimen/space_4">
-
-            <TextView
-                android:id="@+id/answer_output"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/space_8"
-                android:gravity="center"
-                android:textIsSelectable="true" />
-
-        </com.google.android.material.card.MaterialCardView>
-
-    </androidx.core.widget.NestedScrollView>
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_request" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/read_answer"
+        android:id="@+id/stop_reading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"
         android:layout_margin="16dp"
-        app:srcCompat="@android:drawable/ic_media_play"
+        app:srcCompat="@drawable/ic_stop"
         tools:ignore="ContentDescription" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
